@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lan="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel=" stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>Decodificador | Alura </title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="logo.png">
+        <h1 class="titulo-principal">Decodificador</h1>
+        <div class="pacman">
+            <div class="pacman-top"></div>
+            <div class="pacman-bottom"></div>
+            <div class="feed"></div>
+        </div>
+    </header>
+    <main class="main">
+        <section>
+            <textarea class="digite-texto" cols="10" rows="5" placeholder="Digite seu texto" required></textarea>
+            <div>
+                <h6 class="informacao"> &#9432; Apenas letras maiúsculas e minúsculas</h6>
+            </div>
+            <div class="botoes">
+                <button class="criptografar" onclick="btnCriptografar ()">
+                    criptografar
+                </button>
+                <button class="descriptografar" onclick="btnDesencriptar ()">
+                    descriptografar
+                </button>
+            </div>
+        </section>
+        <section>
+            <textarea class="mensagem" cols="40" rows="20" placeholder="Nenhum texto encontrado"></textarea>
+            <button id="copiar" onclick="btnCopiar()">Copiar</button>
+        </section>
+    </main>
+    <footer>
+        <nav class="rede-sociais">
+            <ul>
+                <li><a href="https://github.com/gothvadeer">
+                        <h3>GitHub</h3>
+                    </a></li>
+                <li><a href="https://www.linkedin.com/in/ruama-maranh%C3%A3o-b74602186/">
+                        <h3>Linkedin</h3>
+                    </a></li>
+            </ul>
+        </nav>
+        <p class="copy-right"> &copy; Programado por Julia</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

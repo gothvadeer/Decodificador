@@ -1,0 +1,428 @@
+body {
+
+    background-color: lightblue;
+    width: 100%;
+    height: 100%;
+
+
+
+}
+
+.main {
+
+    display: flex;
+    margin-left: 80px;
+    margin-bottom: 50px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    left: 58px;
+    top: 40px;
+}
+
+.titulo-principal {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    color: rgb(60, 60, 120);
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+
+
+.pacman {
+    margin: 10px 10px;
+}
+
+.pacman-top {
+    background-color: yellow;
+    height: 40px;
+    width: 80px;
+    border-radius: 100px 100px 0 0;
+    animation: spin1 0.5s infinite linear;
+}
+
+.pacman-bottom {
+    background-color: yellow;
+    height: 40px;
+    width: 80px;
+    border-radius: 0 0 100px 100px;
+    animation: spin2 0.5s infinite linear;
+}
+
+.feed {
+    margin-top: -120px;
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 30%;
+    -moz-animation: eat 1s linear 0s infinite;
+    -webkit-animation: eat 1s linear 0s infinite;
+    animation: eat 1s linear 0s infinite;
+}
+
+/* Animation*/
+
+@keyframes spin1 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(-35deg);
+    }
+
+}
+
+@keyframes spin2 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(35deg);
+    }
+}
+
+@-moz-keyframes spin1 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(-35deg);
+    }
+
+}
+
+@-moz-keyframes spin2 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(35deg);
+    }
+}
+
+@-webkit-keyframes spin1 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(-35deg);
+    }
+
+}
+
+@-webkit-keyframes spin2 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(35deg);
+    }
+}
+
+@keyframes eat {
+    0% {
+        box-shadow:
+            100px 65px 0 0 white,
+            300px 65px 0 0 white,
+            500px 65px 0 0 white,
+            700px 65px 0 0 white,
+            900px 65px 0 0 white,
+            1100px 65px 0 0 white,
+            1300px 65px 0 0 white;
+    }
+
+    100% {
+        box-shadow:
+            0px 65px 0 0 white,
+            100px 65px 0 0 white,
+            300px 65px 0 0 white,
+            500px 65px 0 0 white,
+            700px 65px 0 0 white,
+            900px 65px 0 0 white,
+            1100px 65px 0 0 white;
+    }
+}
+
+
+@-moz-keyframes eat {
+    0% {
+        box-shadow:
+            100px 65px 0 0 white,
+            300px 65px 0 0 white,
+            500px 65px 0 0 white,
+            700px 65px 0 0 white,
+            900px 65px 0 0 white,
+            1100px 65px 0 0 white,
+            1300px 65px 0 0 white;
+    }
+
+    100% {
+        box-shadow:
+            0px 65px 0 0 white,
+            100px 65px 0 0 white,
+            300px 65px 0 0 white,
+            500px 65px 0 0 white,
+            700px 65px 0 0 white,
+            900px 65px 0 0 white,
+            1100px 65px 0 0 white;
+    }
+}
+
+
+@-webkit-keyframes eat {
+    0% {
+        box-shadow:
+            100px 65px 0 0 white,
+            300px 65px 0 0 white,
+            500px 65px 0 0 white,
+            700px 65px 0 0 white,
+            900px 65px 0 0 white,
+            1100px 65px 0 0 white,
+            1300px 65px 0 0 white;
+    }
+
+    100% {
+        box-shadow:
+            0px 65px 0 0 white,
+            100px 65px 0 0 white,
+            300px 65px 0 0 white,
+            500px 65px 0 0 white,
+            700px 65px 0 0 white,
+            900px 65px 0 0 white,
+            1100px 65px 0 0 white;
+    }
+}
+
+
+.digite-texto {
+
+    border: none;
+    position: relative;
+    font-size: 25px;
+    line-height: 150%;
+    height: 100px;
+    width: 400px;
+    left: 255px;
+    top: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: lightblue;
+    outline: none;
+
+}
+
+.digite-texto:hover {
+
+    outline: none;
+}
+
+.digite-texto::placeholder {
+    color: rgb(45, 35, 82);
+
+}
+
+p {
+    color: #FFF;
+    font: 50px 'Press Start 2P', cursive;
+    margin: 200px 139px;
+    position: absolute;
+    text-align: center;
+}
+
+.mensagem {
+    position: relative;
+    margin-top: 40px;
+    margin-left: 350px;
+    background-image: url("boneco.png");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    font-size: 15px;
+    box-shadow: 10px 15px 30px black;
+    border-radius: 10px;
+    background-position: 60%;
+}
+
+.mensagem::placeholder {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 7em;
+
+}
+
+.informacao {
+
+    font-size: 14px;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    color: ivory;
+    position: absolute;
+    left: 340px;
+    top: 500px;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+
+}
+
+.criptografar {
+
+    font-size: 15px;
+    padding: 0px;
+    text-align: center;
+    align-items: flex-start;
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    left: 300px;
+    top: 520px;
+    border-radius: 10px;
+    background: darkblue;
+    color: white;
+    border: none;
+}
+
+.criptografar:hover {
+
+    cursor: pointer;
+    background: lightgrey;
+    color: darkblue;
+    transition: 1s;
+    font-size: 20px;
+}
+
+.descriptografar {
+
+    font-size: 15px;
+    padding: 0px;
+    text-align: center;
+    margin: auto;
+    margin-left: 10%;
+    align-items: flex-start;
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    right: 600px;
+    top: 520px;
+    border-radius: 10px;
+    background: lightgrey;
+    color: darkblue;
+    border: none;
+
+
+}
+
+.descriptografar:hover {
+
+    background: darkblue;
+    color: lightgrey;
+    cursor: pointer;
+    transition: 1s;
+    font-size: 20px;
+}
+
+#copiar {
+    font-size: 15px;
+    padding: 0px;
+    text-align: center;
+    align-items: flex-start;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    background: darkblue;
+    color: lightgrey;
+    border: none;
+    margin-left: 450px;
+    margin-top: 2em;
+
+}
+
+#copiar:hover {
+    background: lightgray;
+    color: darkblue;
+    cursor: pointer;
+    transition: 1s;
+    font-size: 20px;
+}
+
+.rede-sociais {
+    position: absolute;
+    top: 580px;
+    left: 90px;
+}
+
+.rede-sociais li {
+    display: inline-block;
+    margin: 0 0 0 15px;
+    right: 300px;
+}
+
+.rede-sociais a {
+    text-transform: uppercase;
+    color: rgb(96, 96, 179);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.rede-sociais a:hover {
+    color: ivory;
+    transition: 1s;
+    text-decoration: underline;
+}
+
+.copy-right {
+
+    color: pink;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 8px black;
+    position: absolute;
+    margin-left: 100px;
+    top: 410px;
+
+
+}
+
+footer {
+    text-align: center;
+    background: linear-gradient(lightblue, rgb(230, 206, 217));
+    padding: 40px 0;
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    body,
+    main {
+        width: 100%;
+        height: 50%;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .criptografar {
+        margin-top: 40%;
+    }
+
+    .mensagem {
+        width: auto;
+    }
+}
